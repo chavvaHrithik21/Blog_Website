@@ -1,0 +1,19 @@
+
+<a href="/"><h4>back to index</h4></a>
+
+<div class="form-group">
+    <label for="title">Title</label> 
+    <input required value="<%=article.title %>" type="text" name="title" id="title" class="form-control">
+</div>
+<div class="form-group">
+    <label for="categories">Categories</label>
+    <input required value="<%=article.categories %>" type="text" name="categories" id="categories" class="form-control">
+</div>
+<div class="form-group">
+    <label for="content">Content</label>
+    <textarea required name="content" id="content" class="form-control"><%= article.content %></textarea>
+</div> 
+
+
+<a href="/" class="btn btn-warning">Cancel</a>
+<button type="submit" class="btn btn-primary">Submit</button>
